@@ -1,0 +1,176 @@
+/* variables */  
+  
+
+
+$background: #d8cfbb;
+$text: #202020;
+$link: #7e3b4f;
+$light:#dfd6c38a;
+$dark: #38352f5b;
+
+/* nav */
+
+
+.nav ul {
+  display:flex;
+  justify-content: space-evenly; 
+  margin-top:2.5vw;
+  padding:0;
+}
+
+.nav li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+} 
+
+a {
+  text-decoration:none;
+  color:$link;
+}
+
+a:hover {
+  color: $dark;
+}
+
+/* index */
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+html {
+  background: $background;
+  color: $text;
+  font-family: sans-serif;
+}
+article {
+  display:block;
+  margin:3rem 4vw 3rem 4vw
+}
+
+.index {
+    margin:2.5vw 5vw 2.5vw 5vw;
+    display:grid;
+    grid-template-columns: auto 2fr auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    text-transform: uppercase;
+  } 
+
+.index h1 {
+  margin:0;
+  display:flex;
+  justify-self: center;
+  grid-column-start:2;
+  grid-column-end:5;
+  grid-row-start:2;
+  grid-row-end:4;
+  font-size: 15em;
+  font-weight:300;
+  z-index: 2;
+}
+
+.index img {
+  margin:0;
+  display: flex;
+  justify-self:center;
+  grid-column-start: 2;
+  grid-column-end: 5 ;
+  grid-row-start: 1;
+  grid-row-end:5;
+  opacity: .4;
+  z-index: 4;
+  border: double $text 6.5px;
+}
+
+.index h2 {
+  margin:0;
+  font-size:2em;
+  font-weight:100;
+  justify-self: center;
+  align-self: center;
+  grid-column-start:2;
+  grid-column-end:5;
+  grid-row-start:3;
+  grid-row-end:4;
+  
+}
+
+.index p {
+  margin:5vw 15% 2.5vw 15%;
+  font-size:1.5rem;
+  align-self: end;
+  grid-column-start:2;
+  grid-column-end:5;
+  grid-row-start:6;
+  grid-row-end:7;
+  text-transform: none;
+  line-height: 1.5;
+}
+
+/* h2 front */
+
+.front span:nth-child(1) {
+  grid-column:36;
+  grid-row:3;
+}
+
+/* back */
+
+/* experience */
+
+.exp {
+  display:flex;
+  flex-direction: column;
+  margin: 0 15%;
+  padding:0;
+  line-height: 1.5;
+}
+
+.exp h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.exp p {
+  margin:0;
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+.exp ul {
+  margin:1vw 0 2.5vw 0;
+}
+.exp li {
+  font-size: 1.5rem;
+} 
+
+.bar {
+  display:flex;
+  margin:2.5vw 20%;
+  height:15px;
+  border: double $dark 6.5px;
+}
+
+.box{
+  display: none;
+  width: 100%;
+}
+
+a:hover + .box,.box:hover{
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+/* footer */
+  
+.footer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:5vw 0;
+}
+
+.footer a {
+  margin: 0 3vw;
+}
+  
