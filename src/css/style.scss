@@ -5,20 +5,21 @@ $text: #202020;
 $link: #7e3b4f;
 $light:#dfd6c38a;
 $dark: #38352f5b;
+$hover: #4c4b58;
 
 /* nav */
 
 .nav ul {
   display:flex;
   justify-content: space-evenly; 
-  margin:2.5vw 0;
+  margin:5vw 0;
   padding:0;
 }
 
 .nav li {
   list-style: none;
   text-transform: uppercase;
-  font-size: 2.5vw;
+  font-size: 2rem;
 } 
 
 a {
@@ -27,7 +28,7 @@ a {
 }
 
 a:hover {
-  color: $dark;
+  color: $hover;
 }
 
 /* index */
@@ -60,14 +61,15 @@ article {
   grid-column-end:4;
   grid-row-start:2;
   grid-row-end:4;
-  font-size: 18vw;
+  font-size: 20vw;
   font-weight:300;
   z-index: 2;
 }
 
 .index img {
   margin:0;
-  max-width: 75%;
+  max-width: 80%;
+  min-width: 325px;
   height:auto;
   display: flex;
   justify-self:center;
@@ -82,7 +84,8 @@ article {
 
 .index h2 {
   margin:0;
-  font-size:2.5vw;
+  font-size:2.75vw;
+  font-weight:300;
   justify-self: center;
   align-self: center;
   grid-column-start:1;
@@ -94,9 +97,9 @@ article {
 
 .index p {
   margin:auto;
-  padding:5vw 0;
-  font-size:2vw;
-  max-width: 55%;
+  padding:5vw 0 2.5vw 0;
+  font-size:1.5rem;
+  max-width: 70%;
   justify-content: center;
   grid-column-start:1;
   grid-column-end:4;
@@ -112,18 +115,18 @@ article {
   display:flex;
   flex-direction: column;
   margin:0 10%;
-  padding:2.5vw;
+  padding:5vw;
   line-height: 1.5;
 }
 
 .exp h1 {
-  font-size: 3vw;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
 .exp p {
   margin:0;
-  font-size: 2vw;
+  font-size: 1.5rem;
   text-transform: none;
 }
 
@@ -131,7 +134,7 @@ article {
   margin:1vw 0 2.5vw 0;
 }
 .exp li {
-  font-size: 2vw;
+  font-size: 1.25rem;
 } 
 
 .bar {
@@ -171,5 +174,18 @@ a:hover + .box,.box:hover{
   margin: 0 3vw;
 }
 
+@media (max-width:900px) {
 
+.nav li {
+font-size:1.25rem;
+}
+.index p {
+font-size:1rem;
+}
+}
   
+@media (max-width:500px) {
+  .nav ul {
+    margin:15vw 0;
+  }  
+}
