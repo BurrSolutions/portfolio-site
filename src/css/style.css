@@ -236,9 +236,12 @@ a:hover + .box, .box:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   .nav ul {
     margin: 5vw 0;
+  }
+  .index p {
+    padding: 10vw 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

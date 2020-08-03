@@ -191,8 +191,8 @@ a:hover + .box,.box:hover{display: none;}
 .index p, .exp p, .exp li {font-size:4vw;}
 }
   
-@media (max-width:500px) {
-  .nav ul {
-    margin:5vw 0;
-  }  
+@media (max-width:450px) {
+  .nav ul {margin:5vw 0;}  
+  .index p{padding:10vw 0;}
 }
+
