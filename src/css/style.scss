@@ -12,7 +12,7 @@ $hover: #4c4b58;
 .nav ul {
   display:flex;
   justify-content: space-evenly; 
-  margin:5vw 0;
+  margin:2.5vw 0;
   padding:0;
 }
 
@@ -20,6 +20,7 @@ $hover: #4c4b58;
   list-style: none;
   text-transform: uppercase;
   font-size: 2rem;
+  font-weight:300;
 } 
 
 a {
@@ -99,6 +100,7 @@ article {
   margin:auto;
   padding:5vw 0 2.5vw 0;
   font-size:1.5rem;
+  font-weight:300;
   max-width: 70%;
   justify-content: center;
   grid-column-start:1;
@@ -122,11 +124,13 @@ article {
 .exp h1 {
   font-size: 2rem;
   text-transform: uppercase;
+  font-weight:300;
 }
 
 .exp p {
   margin:0;
   font-size: 1.5rem;
+  font-weight:300;
   text-transform: none;
 }
 
@@ -134,7 +138,8 @@ article {
   margin:1vw 0 2.5vw 0;
 }
 .exp li {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight:300;
 } 
 
 .bar {
@@ -151,9 +156,10 @@ article {
 }
 
 a:hover + .box,.box:hover{
-  display: block;
-  position: relative;
-  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  
 }
 
 /* footer */
@@ -174,18 +180,19 @@ a:hover + .box,.box:hover{
   margin: 0 3vw;
 }
 
-@media (max-width:900px) {
+@media (max-width:1100px) {
 
-.nav li {
-font-size:1.25rem;
+a:hover + .box,.box:hover{display: none;}
 }
-.index p {
-font-size:1rem;
-}
+
+@media (max-width:700px) {
+.nav ul {margin:2.5vw 0;}  
+.nav li, .exp h1 {font-size:5vw;}
+.index p, .exp p, .exp li {font-size:4vw;}
 }
   
 @media (max-width:500px) {
   .nav ul {
-    margin:15vw 0;
+    margin:5vw 0;
   }  
 }
