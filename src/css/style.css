@@ -129,18 +129,14 @@ article {
       grid-row-start: 6;
   grid-row-end: 7;
   text-transform: none;
+  text-align: justify;
+  text-justify: inter-word;
   line-height: 1.5;
 }
 
 /* experience */
 .exp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: block;
   margin: 0 10%;
   padding: 5vw;
   line-height: 1.5;
@@ -153,14 +149,18 @@ article {
 }
 
 .exp p {
+  width: 50%;
   margin: 0;
   font-size: 1.5rem;
   font-weight: 300;
+  text-align: justify;
+  text-justify: inter-word;
   text-transform: none;
 }
 
 .exp ul {
   margin: 1vw 0 2.5vw 0;
+  max-width: 25%;
 }
 
 .exp li {
@@ -179,20 +179,10 @@ article {
 }
 
 .box {
-  display: none;
-  width: 100%;
-}
-
-a:hover + .box, .box:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  display: block;
+  position: absolute;
+  margin-top: .5vw;
+  left: 53.5%;
 }
 
 /* footer */
@@ -219,8 +209,11 @@ a:hover + .box, .box:hover {
 }
 
 @media (max-width: 1100px) {
-  a:hover + .box, .box:hover {
+  .box {
     display: none;
+  }
+  .exp p {
+    width: 100%;
   }
 }
 

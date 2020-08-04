@@ -108,14 +108,15 @@ article {
   grid-row-start:6;
   grid-row-end:7;
   text-transform: none;
+  text-align: justify;
+  text-justify: inter-word;
   line-height: 1.5;
 }
 
 /* experience */
 
 .exp {
-  display:flex;
-  flex-direction: column;
+  display: block;
   margin:0 10%;
   padding:5vw;
   line-height: 1.5;
@@ -128,14 +129,18 @@ article {
 }
 
 .exp p {
+  width:50%;
   margin:0;
   font-size: 1.5rem;
   font-weight:300;
+  text-align: justify;
+  text-justify: inter-word;
   text-transform: none;
 }
 
 .exp ul {
   margin:1vw 0 2.5vw 0;
+  max-width:25%;
 }
 .exp li {
   font-size: 1.5rem;
@@ -151,17 +156,11 @@ article {
 }
 
 .box{
-  display: none;
-  width: 100%;
+  display:block;
+  position:absolute;
+  margin-top: .5vw;
+  left:53.5%;
 }
-
-a:hover + .box,.box:hover{
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  
-}
-
 /* footer */
   
 .footer {
@@ -182,7 +181,8 @@ a:hover + .box,.box:hover{
 
 @media (max-width:1100px) {
 
-a:hover + .box,.box:hover{display: none;}
+.box{display: none;}
+.exp p{width:100%;}
 }
 
 @media (max-width:700px) {
