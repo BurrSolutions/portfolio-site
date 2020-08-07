@@ -137,7 +137,7 @@ article {
 /* experience */
 .exp {
   display: block;
-  margin: 0 10%;
+  margin: 0 15%;
   padding: 5vw;
   line-height: 1.5;
 }
@@ -149,7 +149,7 @@ article {
 }
 
 .exp p {
-  width: 50%;
+  width: 100%;
   margin: 0;
   font-size: 1.5rem;
   font-weight: 300;
@@ -178,13 +178,6 @@ article {
   border: double #38352f5b 6.5px;
 }
 
-.box {
-  display: block;
-  position: absolute;
-  margin-top: .5vw;
-  left: 53.5%;
-}
-
 /* footer */
 .footer {
   display: -webkit-box;
@@ -208,15 +201,7 @@ article {
   margin: 0 3vw;
 }
 
-@media (max-width: 1100px) {
-  .box {
-    display: none;
-  }
-  .exp p {
-    width: 100%;
-  }
-}
-
+/* screens */
 @media (max-width: 700px) {
   .nav ul {
     margin: 2.5vw 0;
